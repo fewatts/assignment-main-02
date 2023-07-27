@@ -71,3 +71,250 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+/* navbar */
+
+.nav-bar {
+    background-color: #1f2937;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 190px;
+    justify-content: space-around;
+
+}
+
+.logo-text {
+    height: auto;
+    width: 40px;
+}
+
+.links-text {
+    color: #e5e7eb;
+    font-size: 18px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.links-text:hover {
+    color: hsl(90, 17%, 98%);
+}
+
+.links-div {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+/* main */
+/* section 1 */
+
+.main-1 {
+    background-color: #1f2937;
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    gap: 10px;
+    padding-left: 14rem;
+    padding-right: 14rem;
+    justify-content: space-around;
+
+}
+
+.main-tittle {
+    color: hsl(90, 17%, 98%);
+    font-size: 48px;
+    font-family: 'roboto-bolder';
+    font-weight: bolder;
+}
+
+.main-paragrafh {
+    color: #e5e7eb;
+    text-align: left;
+}
+
+.main-img {
+    height: auto;
+    width: 50%;
+}
+
+.main-button {
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #3882f6;
+    color: hsl(90, 17%, 98%);
+    width: 110px;
+    border-radius: 6px;
+    padding: 5px;
+    border: solid #3882f6;
+    font-family: 'roboto-bolder';
+}
+
+.main-button:hover {
+    background-color: #3375e0;
+    color: #e5e7eb;
+}
+
+/* section 2 */
+
+.secondary-tittle {
+    color: #1f2937;
+    text-align: center;
+    font-family: 'roboto-bolder';
+    font-size: 36px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.main-2-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.cards-img {
+    height: auto;
+    width: 150px;
+}
+
+.section-2-img {
+    border-radius: 10px;
+    border: solid #3882f6;
+    margin-bottom: 30px;
+}
+
+.section-2-paragrafh {
+    text-align: center;
+    color: #1f2937;
+}
+
+/* section 3 */
+
+.main-3 {
+    background-color: #e5e7eb;
+    padding: 7rem;
+    padding-left: 300px;
+    padding-right: 300px;
+    margin-top: 60px;
+}
+
+.section-3-paragrafh {
+    font-family: 'italic-bolder';
+    font-size: 36px;
+    text-align: justify;
+}
+
+.section-3-autor {
+    text-align: end;
+    font-family: 'roboto-bolder';
+}
+
+/* section 4 */
+
+.main-4 {
+    padding: 5rem;
+}
+
+.card-section-4 {
+    color: #e5e7eb;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-left: 120px;
+    margin-right: 120px;
+    border-radius: 5px;
+    background-color: #3882f6;
+    padding: 30px;
+}
+
+.content-card-section-4 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main-4-button {
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #3882f6;
+    color: hsl(90, 17%, 98%);
+    width: 110px;
+    border-radius: 6px;
+    padding: 5px;
+    border: solid hsl(90, 17%, 98%);
+    font-family: 'roboto-bolder';
+}
+
+.main-4-button:hover {
+    background-color: hsl(90, 17%, 98%);
+    color: #3882f6;
+}
+
+/* footer */
+
+.footer {
+    background-color: #1f2937;
+    text-align: center;
+    color: #e5e7eb;
+    padding: 20px;
+}
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+    .nav-bar{
+        gap: 0px;
+    }
+
+    .links-div {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+    }
+
+    .main-img {
+        height: auto;
+        width: 100%;
+    }
+
+    .main-1 {
+        padding: 2.5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-2-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-2-cards{
+        gap: 20px;
+    }
+
+    .main-3 {
+        padding: 3rem;  
+    }
+
+    .section-3-paragrafh {
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .main-4 {
+        margin: 10px;
+        padding: 1rem;
+    }
+
+    .card-section-4 {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .content-card-section-4{
+        font-size: 10px;
+    }
+
+}
