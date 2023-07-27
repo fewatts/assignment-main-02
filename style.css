@@ -84,10 +84,8 @@ a {
 }
 
 .logo-text {
-    color: hsl(90, 17%, 98%);
-    font-size: 24px;
-    font-weight: bolder;
-    font-family: 'roboto-bolder';
+    height: auto;
+    width: 40px;
 }
 
 .links-text {
@@ -136,7 +134,7 @@ a {
 
 .main-img {
     height: auto;
-    width: 100%;
+    width: 50%;
 }
 
 .main-button {
@@ -246,16 +244,48 @@ a {
     font-family: 'roboto-bolder';
 }
 
-.main-4-button:hover{
+.main-4-button:hover {
     background-color: hsl(90, 17%, 98%);
     color: #3882f6;
 }
 
 /* footer */
 
-.footer{
+.footer {
     background-color: #1f2937;
     text-align: center;
     color: #e5e7eb;
     padding: 20px;
+}
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+
+    .main-img {
+        height: auto;
+        width: 90%;
+    }
+
+    .main-1 {
+        padding: 2.5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-2-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-3 {
+        padding: 2.5rem;
+    }
+
+    .card-section-4 {
+        margin-left: 10px;
+        margin-right: 10px;
+        align-items: center;
+    }
+
 }
