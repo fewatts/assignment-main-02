@@ -259,6 +259,63 @@ a {
     padding: 20px;
 }
 
+/* about page*/
+
+.about-story {
+    text-align: left;
+    color: white;
+    font-size: 50px;
+    margin-left: 10px;
+}
+
+
+.about-container {
+    background-image: url(./assets/imgs/back2.jpg);
+  background-size:contain;
+  height: 500px;
+}
+
+.about-text {
+    text-align: left;
+    color: white;
+    width: 50%;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.about-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15%;
+    border: 2px solid black;
+}
+
+.team-title {
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 50px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px; 
+}
+
+.group-container {
+    width: 70%;
+    margin: auto;
+}
+
+.team-name {
+    text-align: center;
+}
+
+.team-position {
+    text-align: center;
+}
+
 /* mobile */
 
 @media screen and (max-width: 768px) {
