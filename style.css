@@ -327,6 +327,7 @@ main {
 /* main */
 .signup-section {
     text-align: center;
+    padding: 20px;
 }
 
 .signup-title {
@@ -334,7 +335,6 @@ main {
     font-family: 'roboto-bolder';
     font-weight: bold;
     padding: 30px 0 20px 0;
-    display: inline-block;
     color: #1f2937;
 }
 
@@ -342,11 +342,9 @@ main {
     padding: 20px 30px 0 30px;
     border: 1px solid #1f2937;
     margin: 0 auto;
-    display: inline-center;
     border-radius: 15px;
     text-align: left;
-    width: 470px;
-    height: 700px;
+    max-width: 470px;
     background-color: #E5E7EB;
 }
 
@@ -357,15 +355,16 @@ label {
 }
 
 input {
-    width: 400px;
+    width: 100%;
     height: 40px;
     border: 1px solid #1f2937;
     padding: 10px;
 }
 
 .signup-button {
-    margin-top: 30px;
-    width: 110px;
+    padding: 30px;
+    margin-bottom: 20px;
+    width: 100%;
     border: none;
     border-radius: 6px;
     padding: 8px 16px;
@@ -378,8 +377,8 @@ input {
 
 .check-agreement {
     display: flex;
-    justify-content: left;
     align-items: center;
+    justify-items: center;
 }
 
 .check-box {
@@ -413,6 +412,7 @@ input {
 }
 
 .optional-signup {
+    padding-right: 40px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -439,9 +439,8 @@ input {
 }
 
 .login-section {
-    padding: 0 45px 70px 45px;
+    padding: 100px;
     text-align: center;
-
 }
 
 .login-title {
@@ -449,52 +448,25 @@ input {
     font-family: 'roboto-bolder';
     font-weight: bold;
     padding: 30px 0 20px 0;
-    display: inline-block;
     color: #1f2937;
 }
 
 .login-form {
     padding: 20px 30px 0 30px;
     border: 1px solid #1f2937;
-    margin: 0 auto;
-    display: inline-center;
+    margin: auto;
     border-radius: 15px;
     text-align: left;
-    width: 470px;
-    height: 400px;
+    max-width: 400px;
     background-color: #E5E7EB;
-}
-
-label {
-    display: block;
-    padding-top: 20px;
-}
-
-input {
-    width: 400px;
-    height: 40px;
-    border: 1px solid #1f2937;
-    padding: 10px;
-}
-
-.check-remember {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-.check-box {
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
 }
 
 .login-button {
     margin-top: 30px;
-    width: 110px;
+    width: 100%;
     border: none;
     border-radius: 6px;
-    padding: 8px 16px;
+    padding: 10px;
     background-color: #3882f6;
     font-family: 'roboto-bolder';
     color: white;
@@ -505,6 +477,58 @@ input {
 .lost-password {
     text-decoration: none;
     color: #3882f6;
+}
+
+/* recipes page */
+
+.tittle-recipes {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    padding-top: 30px;
+    padding-left: 240px;
+    font-family: "italic-bolder";
+    font-size: 2.5rem;
+}
+
+.main-recipe {
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 90px;
+}
+
+.recipe-card {
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 450px;
+}
+
+.recipe-img {
+    height: auto;
+    width: 100%;
+    max-height: 200px;
+    border-radius: 10px;
+    border: solid 1px #1f2937;
+    object-fit: cover;
+}
+
+.tittle-recipe {
+    padding: 4px;
+    font-family: 'bolder';
+}
+
+.recipe-description {
+    font-size: 1rem;
+    color: #4b5563;
+}
+
+.recipe-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* mobile */
@@ -573,6 +597,43 @@ input {
         align-items: center;
         gap: 10px;
         margin: 20px;
+    }
+
+    /* recipes page */
+
+    .tittle-recipes {
+        padding-top: 30px;
+        padding-left: 60px;
+        font-family: "italic-bolder";
+        font-size: 2.5rem;
+    }
+
+    /* signup page */
+    .optional-signup {
+        padding-right: 40px;
+        gap: 5px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .signup-section{
+        padding: 60px;
+    }
+
+    /* login page */
+    .login-form {
+        width: 100%; 
+    }
+
+    .login-section{
+        padding: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .main-log{
+        justify-self: center;
+        align-content: center;
     }
 
 }
