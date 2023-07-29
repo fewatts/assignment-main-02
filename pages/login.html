@@ -3,60 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stylelogin.css">
+    <link rel="stylesheet" href="./../style.css">
     <title>Document</title>
 </head>
-
 <body>
     <header>
         <nav class="nav-bar" role="navigation">
             <div class="logo-text">
-                <img src="./assets/imgs/logo-nav.svg" alt="Restaurant logo">
+                <img src="./../assets/images/logo-nav.svg" alt="Restaurant logo">
             </div>
             <div>
                 <ul class="links-div">
-                     <li class="links-text"><a href="./index.html">Home</a></li>
+                    <li class="links-text"><a href="../index.html">Home</a></li>
                     <li class="links-text">Recipes</li>
-                    <li class="links-text"> <a href="./pages/about.html">About us</a></li>
+                    <li class="links-text"><a href="./about.html">About us</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main>
+    <main class="main-log">
         <section class="login-section">
-            <p class="login-title">MY ACCOUNT</p>  
+            <p class="login-title">MY ACCOUNT</p>
             <div>
-                <form class="login-form"> 
-                    <label for= "e-mail">
-                    E-mail adress
-                    <br/>
-                    <input 
-                        type="text" 
-                        placeholder="e-mail">
+                <form class="login-form">
+                    <label for="e-mail">
+                        E-mail adress
+                        <br />
+                        <input type="text" placeholder="e-mail">
                     </label>
-                    <br/>
-                    <label for= "password">
-                    Password 
-                    <br/>
-                    <input
-                        type="password" 
-                        placeholder="password">
+                    <br />
+                    <label for="password">
+                        Password
+                        <br />
+                        <input type="password" placeholder="password">
                     </label>
-                    <br/>
+                    <br />
                     <div class="check-remember">
-                        <input 
-                            class="check-box"
-                            type="checkbox"  
-                            value="One" 
-                        />
+                        <input class="check-box" type="checkbox" value="One" />
                         <span>Remember me</span>
                     </div>
-                    <button class="login-button">Log in</button><br/>
+                    <button class="login-button">Log in</button><br />
                     <a class="lost-password" href="lostpassword.html">Lost your password?</a>
-                    <br/>
-                </form> 
+                    <br />
+                </form>
             </div>
-        </section>    
+        </section>
     </main>
     <footer class="footer">
         <p>Copyright &copy; </p>
