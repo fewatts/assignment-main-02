@@ -14,6 +14,11 @@
     src: url(./assets/font/Roboto-BlackItalic.ttf);
 }
 
+@font-face {
+    font-family: 'italic';
+    src: url(./assets/font/Roboto-Italic.ttf);
+}
+
 /* reset */
 *,
 *::before,
@@ -489,7 +494,7 @@ input {
     color: #e5e7eb;
     padding-top: 30px;
     padding-left: 240px;
-    font-family: "italic-bolder";
+    font-family: "roboto-bolder";
     font-size: 2.5rem;
 }
 
@@ -499,6 +504,10 @@ input {
     flex-wrap: wrap;
     justify-content: center;
     gap: 90px;
+}
+
+.recipe-para {
+    font-family: 'italic';
 }
 
 .recipe-card {
@@ -532,6 +541,18 @@ input {
 .recipe-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-recipe {
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #3882f6;
+    color: hsl(90, 17%, 98%);
+    width: 110px;
+    border-radius: 6px;
+    padding: 5px;
+    border: solid hsl(90, 17%, 98%);
+    font-family: 'roboto-bolder';
 }
 
 /* mobile */
@@ -602,17 +623,17 @@ input {
         margin: 20px;
     }
 
-    .about-container{
+    .about-container {
         height: fit-content;
     }
 
-    .about-story{
+    .about-story {
         margin-left: 10px;
         text-align: center;
         font-size: 46px;
     }
 
-    .about-text{
+    .about-text {
         margin-left: 32px;
         font-weight: bolder;
         font-family: 'roboto-bolder';
@@ -635,22 +656,22 @@ input {
         flex-direction: column;
     }
 
-    .signup-section{
+    .signup-section {
         padding: 60px;
     }
 
     /* login page */
     .login-form {
-        width: 100%; 
+        width: 100%;
     }
 
-    .login-section{
+    .login-section {
         padding: 10px;
         margin-top: 40px;
         margin-bottom: 40px;
     }
 
-    .main-log{
+    .main-log {
         justify-self: center;
         align-content: center;
     }
